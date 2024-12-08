@@ -334,3 +334,18 @@ footer p {
         text-align: center;
     }
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(93, 249, 181);
+    background-image: url('../images/hero.jpg') no-repeat center center/cover;
+    border-radius: 50%; 
+    width: 30px; 
+    height: 30px; 
+}
+
+/* Optional: Customize hover effect */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: darkgreen;
+}
