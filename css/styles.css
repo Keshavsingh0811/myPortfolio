@@ -42,9 +42,9 @@ body.dark-theme {
 
 /* Hero Section */
 .hero-section {
-    background: url('../images/hero.jpg') no-repeat center center/cover;
+    background: linear-gradient(to bottom right, #2b5876, #4e4376);
     height: 100vh;
-    color: #fff;
+    color: #ffffff; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,11 +57,15 @@ body.dark-theme {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
 }
 
 .hero-section p {
     font-size: 1.3rem;
     font-weight: 500;
+    color: #d1e8ff; 
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* About Section */
@@ -86,44 +90,90 @@ body.dark-theme {
 
 /* Skills Section */
 #skills {
-    background-color: #f1f1f1;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Modern gradient */
+    color: white;
     padding: 80px 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
 }
 
 #skills h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+#skills .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 #skills .col-md-3 {
+    background-color: #ffffff; /* White background for individual skill cards */
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px; /* Fixed width for a cleaner layout */
 }
 
 #skills .col-md-3:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px); /* Lifting effect on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 #skills i {
-    color: #3498db;
-    margin-bottom: 10px;
+    color: #3498db; /* Blue color for icons */
+    font-size: 4rem; /* Larger icons for better visibility */
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+#skills i:hover {
+    color: #388e3c; /* Darker green when hovered */
 }
 
 #skills p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* For small screens: Center the skill cards and adjust padding */
+@media (max-width: 768px) {
+    #skills .col-md-3 {
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 160px; /* Adjust width for mobile */
+    }
+
+    #skills h2 {
+        font-size: 2.2rem;
+    }
+
+    #skills i {
+        font-size: 2.5rem;
+    }
 }
 
 /* Experience Section */
 #experience {
     padding: 80px 15px;
+    background-color: #333; 
 }
 
 #experience h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     text-align: center;
-    color: #333;
+    color: #f1f1f1; 
+    font-weight: 700;
 }
 
 #experience .mb-4 {
@@ -135,13 +185,20 @@ body.dark-theme {
 #experience h5 {
     font-size: 1.6rem;
     font-weight: bold;
-    color: #333;
+    color: #fff; 
     margin-bottom: 10px;
 }
 
 #experience p {
     font-size: 1.1rem;
-    color: #555;
+    color: #f1f1f1; 
+    margin-bottom: 15px;
+}
+
+#experience .company-info {
+    font-size: 1.1rem;
+    color: #3498db; 
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
@@ -154,7 +211,7 @@ body.dark-theme {
 #experience ul li {
     font-size: 1.1rem;
     margin-bottom: 10px;
-    color: #555;
+    color: #ddd; 
     position: relative;
 }
 
@@ -163,60 +220,87 @@ body.dark-theme {
     position: absolute;
     left: -20px;
     font-size: 1.5rem;
-    color: #3498db;
+    color: #3498db; 
 }
 
-#experience .mb-4:last-child {
-    border-bottom: 4px solid #3498db;
-    padding-bottom: 20px;
-}
-
+    /* Responsive Styles */
 @media (max-width: 768px) {
     #experience h2 {
         font-size: 2rem;
     }
+
     #experience h5 {
         font-size: 1.4rem;
     }
+
     #experience ul li {
+        font-size: 1rem;
+    }
+
+    #experience p {
         font-size: 1rem;
     }
 }
 
-
 /* Projects Section */
 #projects {
-    background-color: #fff;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Modern gradient background */
+    color: white;
     padding: 80px 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
 }
 
 #projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
     text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff; /* White color for heading */
 }
 
 .card {
+    background-color: #fff; /* White background for better text visibility */
+    color: #333; /* Dark text color for contrast */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px; /* Rounded edges for cards */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+    padding: 20px;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-15px); /* Slightly more lifting effect on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 .card-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #333;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #3498db; /* Blue color for titles */
+    margin-bottom: 10px;
 }
 
 .card-text {
-    font-size: 1rem;
-    color: #555;
+    font-size: 1.1rem;
+    color: #555; /* Darker text for readability */
     margin-bottom: 10px;
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+    #projects h2 {
+        font-size: 2.2rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
 }
 
 /* Education Section */
@@ -225,43 +309,180 @@ body.dark-theme {
     background-color: #fff;
 }
 
+#education {
+    padding: 80px 15px;
+    background-color: #333; /* Dark background for contrast */
+}
+
 #education h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     text-align: center;
-    color: #333;
+    color: #f1f1f1; /* Light text color */
+    font-weight: 700;
 }
 
-#education .fw-bold {
-    font-weight: 600;
-    color: #333;
-    font-size: 1.5rem;
+#education .mb-4 {
+    padding-left: 20px;
+    margin-bottom: 30px;
+    padding-right: 10px; 
+}
+
+#education h5 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff; /* White color for education titles */
+    margin-bottom: 10px;
 }
 
 #education p {
     font-size: 1.1rem;
-    color: #555;
+    color: #f1f1f1; /* Light text for the descriptions */
     margin-bottom: 15px;
-    font-weight: 400;
 }
 
+#education .institution-info {
+    font-size: 1.1rem;
+    color: #3498db; /* Blue color for institutions */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#education ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+#education ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ddd; /* Light gray text for list items */
+    position: relative;
+}
+
+#education ul li:before {
+    content: "•";
+    position: absolute;
+    left: -20px;
+    font-size: 1.5rem;
+    color: #3498db; /* Blue bullet points */
+}
+
+/* Last item border */
+#education .mb-4:last-child {
+    border-bottom: 4px solid #3498db; /* Blue border for the last item */
+    padding-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #education h2 {
+        font-size: 2rem;
+    }
+
+    #education h5 {
+        font-size: 1.4rem;
+    }
+
+    #education ul li {
+        font-size: 1rem;
+    }
+
+    #education p {
+        font-size: 1rem;
+    }
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Same gradient background as contact */
+    color: white; /* White text for better readability */
+    padding: 80px 15px; /* Same padding as contact section */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+
+#testimonials h2 {
+    font-size: 2.8rem; /* Same font size as contact */
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff; /* White color for heading */
+}
+
+#testimonials p {
+    font-size: 1.2rem;
+    color: #ffffff; /* White text for better readability */
+    text-align: center;
+}
+
+/* Carousel Inner and Items */
+#testimonials .carousel-inner {
+    font-style: italic; /* Italic text */
+}
+
+#testimonials .carousel-item {
+    padding: 2rem; /* Padding for balance */
+}
+
+#testimonials p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #ffffff; /* White text */
+}
+
+#testimonials h5 {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* Optional: Adding similar button hover effect */
+#testimonials .btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff;
+}
+
+#testimonials .btn-primary:hover {
+    background-color: #0056b3; /* Hover effect for the button */
+    border-color: #0056b3;
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+    #testimonials h2 {
+        font-size: 2.2rem; /* Smaller text for headings on small screens */
+    }
+
+    #testimonials p {
+        font-size: 1rem;
+    }
+
+    #testimonials .carousel-item {
+        font-size: 1rem;
+    }
+}
 
 /* Contact Section */
 #contact {
-    background-color: #f1f1f1; /* Light background */
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Modern gradient background */
+    color: white; /* Ensure text stands out against the background */
     padding: 80px 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
 }
 
 #contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
     text-align: center;
-    color: #333;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff; /* White color for heading */
 }
 
 #contact p {
-    font-size: 1.1rem;
-    color: #555;
+    font-size: 1.2rem;
+    color: #ffffff; /* White text for better readability */
     text-align: center;
 }
 
@@ -277,24 +498,49 @@ body.dark-theme {
 .contact-info .contact-item {
     text-align: center;
     font-size: 1.2rem;
-    color: #333;
-    display: flex; /* Make this flex to align icon and text horizontally */
+    color: #fff; /* White text for icons and information */
+    display: flex; /* Align the icon and text horizontally */
     align-items: center; /* Vertically center the items */
     gap: 10px; /* Space between the icon and text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.contact-info .contact-item:hover {
+    transform: translateY(-10px); /* Slightly lift on hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
 }
 
 .contact-info .contact-item i {
-    font-size: 2rem;
-    color: #3498db;
+    font-size: 2.5rem; /* Larger icons for better visibility */
+    color: #ffffff; /* White color for icons for visibility */
+    transition: color 0.3s ease;
+}
+
+.contact-info .contact-item i:hover {
+    color: #388e3c; /* Darker green on hover */
 }
 
 .contact-info .contact-item a,
 .contact-info .contact-item p {
     font-size: 1.2rem;
+    color: #fff; /* Ensure text color is white */
     margin: 0; /* Remove any extra margin */
 }
 
+/* For small screens */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2.2rem;
+    }
 
+    #contact p {
+        font-size: 1rem;
+    }
+
+    .contact-info .contact-item {
+        font-size: 1rem;
+    }
+}
 
 /* Footer */
 footer {
@@ -348,4 +594,10 @@ footer p {
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
     background-color: darkgreen;
+}
+
+#achievements p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-style: italic;
 }

@@ -31,7 +31,6 @@
         </div>
     </nav>
 
-
     <!-- Hero Section -->
     <header class="hero-section text-white text-center">
         <div class="container d-flex flex-column justify-content-center align-items-center h-100">
@@ -39,6 +38,7 @@
             <p class="lead">Software Engineer | .NET | React</p>
         </div>
     </header>
+    <hr>
 
     <!-- About Section -->
     <section id="about" class="py-5">
@@ -52,6 +52,7 @@
                 high-quality results that help drive business success while enhancing my own technical growth.</p>
         </div>
     </section>
+    <hr>
 
     <!-- Skills Section -->
     <section id="skills" class="bg-light py-5">
@@ -97,6 +98,7 @@
             </div>
         </div>
     </section>
+    <hr>
 
     <!-- Experience Section -->
     <section id="experience" class="py-5">
@@ -137,6 +139,7 @@
             </div>
         </div>
     </section>
+    <hr>
 
     <!-- Projects Section -->
     <section id="projects" class="bg-light py-5">
@@ -204,8 +207,9 @@
             </div>
         </div>
     </section>
+    <hr>
 
-    <!-- Education Section -->
+    <!-- Education -->
     <section id="education" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Education</h2>
@@ -219,6 +223,7 @@
             </div>
         </div>
     </section>
+    <hr>
 
     <!-- Testimonials -->
     <section id="testimonials" class="bg-light py-5">
@@ -247,12 +252,12 @@
             </div>
         </div>
     </section>
-    <hr style="border-top: 5px solid #0598f9;  width: 90%; margin: 20px auto;">
+    <hr>
 
-    <!-- achievements -->
+    <!-- Achievements Section -->
     <section id="achievements" class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Achievements</h2>
+            <h2 class="text-center mb-4"><b>Achievements</b></h2>
             <div class="carousel slide" id="achievementsCarousel" data-bs-ride="carousel">
                 <div class="carousel-inner text-center">
                     <!-- Certificate 1 -->
@@ -269,11 +274,11 @@
                     <div class="carousel-item">
                         <img src="images/cert2.jpg" alt="Certificate 2" class="img-fluid mb-3"
                             style="max-height: 500px; width: 1000px;">
-                        <p><strong>Certificate of Excellence – SGBC Project Leadership</strong></p>
-                        <p>Recognized with the Certificate of Excellence by Moltech Solutions Pvt. Ltd. for leading the
-                            SGBC project with exceptional dedication and remarkable contributions. Successfully
-                            demonstrated leadership, technical expertise, and teamwork to deliver impactful results,
-                            significantly enhancing client satisfaction and organizational growth.</p>
+                        <p><strong>Certificate - React Developer</strong></p>
+                        <p>Completed an intensive React developer certification course, mastering essential concepts
+                            like hooks, state management, and component architecture. Applied knowledge to build
+                            dynamic and performant web applications. Received a top-tier rating for project excellence.
+                        </p>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#achievementsCarousel"
@@ -287,14 +292,13 @@
             </div>
         </div>
     </section>
+    <hr>
 
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Contact</h2>
             <p class="text-center">Feel free to reach out at:</p>
-
-            <!-- Contact Info -->
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="bi bi-envelope"></i>
@@ -306,29 +310,17 @@
                 </div>
                 <div class="contact-item">
                     <i class="bi bi-linkedin"></i>
-                    <a href="https://linkedin.com/in/keshav-pratap-singh-8b217121a">LinkedIn</a>
+                    <a href="https://linkedin.com/in/keshav-pratap-singh-8b217121a" target="_blank">LinkedIn</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Keshav Pratap Singh. All rights reserved.</p>
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Keshav Pratap Singh</p>
     </footer>
-    <button id="back-to-top" class="btn btn-dark position-fixed bottom-0 end-0 m-3">↑ Top</button>
 
-    <!-- Scripts -->
-    <script>
-        const backToTop = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => {
-            backToTop.style.display = window.scrollY > 200 ? 'block' : 'none';
-        });
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
